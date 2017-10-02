@@ -55,8 +55,8 @@ public class WindowConfig extends AbstractSpaceConnectorConfig implements Serial
   private ArrayList<AbstractSpaceConfig> rooms; //spaces connected by this window
   
   public String toString() {
-    StringBuffer rv=new StringBuffer("WindowConfig \""+name+"\" {\n");
-    rv.append("}\n");
+    StringBuffer rv=new StringBuffer("WindowConfig \""+name+"\" {->"+connectedToName);
+    rv.append("}");
     return rv.toString();
   }
   

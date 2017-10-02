@@ -121,7 +121,19 @@ public class SimpleHousePlotter extends JFrame implements Runnable {
         getContentPane().add(jp);
         thread=new Thread(this);
         thread.start();
-        setVisible(true);
+        boolean visible=false;
+        while (!visible) {
+          try {
+            setVisible(true);
+            visible=true;
+          }
+          catch (NullPointerException e) {
+            try {
+              Thread.sleep(100);
+            }
+            catch (InterruptedException e1) {}
+          }
+        }
     }
     
     public void run() {

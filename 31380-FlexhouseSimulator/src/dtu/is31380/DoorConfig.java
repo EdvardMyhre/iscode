@@ -47,8 +47,8 @@ public class DoorConfig extends AbstractSpaceConnectorConfig implements Serializ
   private ArrayList<AbstractSpaceConfig> rooms; //spaces connected by this door
   
   public String toString() {
-    StringBuffer rv=new StringBuffer("WindowConfig \""+name+"\" {\n");
-    rv.append("}\n");
+    StringBuffer rv=new StringBuffer("DoorConfig \""+name+"\" {->"+connectedToName);
+    rv.append("}");
     return rv.toString();
   }
   
