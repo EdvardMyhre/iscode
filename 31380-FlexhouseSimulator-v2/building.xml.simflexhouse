@@ -2,7 +2,7 @@
 
 <building name="Building 999" description="Simulated Flexhouse 1"
           latitude="55.68553" longitude="12.10069" altitude="40">
-          <!-- ALTITUDE NOT VERIFIED -->
+          <!-- ALTITUDE NOT VERIFIED - edit-->
           
   <!-- DEFAULT CONTROLLERS -->
   <controller name="DefaultSwitchingThermostaticController" devicetype="PowerHeater"/>
